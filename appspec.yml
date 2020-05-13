@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ec2-user/jpbot
+    destination: /home/ubuntu/jpbot
 hooks:
   AfterInstall:
     - location: scripts/install_dependencies
