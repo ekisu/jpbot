@@ -3,3 +3,5 @@
 if [ -e "/tmp/jpbot.pid" ]; then
     kill $(cat /tmp/jpbot.pid)
 fi
+
+exit 0
