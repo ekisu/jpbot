@@ -1,3 +1,4 @@
 #!/bin/bash
-sudo yum -y install python3 python3-pip
-sudo pip3 install -r /home/ec2-user/jpbot/requirements.txt
+sudo apt-get install -y python3.7 python3-pip3
+python3.7 -m pip install pip
+python3.7 -m pip install -r /home/ubuntu/jpbot/requirements.txt
