@@ -1,0 +1,6 @@
+#!/bin/bash
+cd /home/ec2-user/jpbot
+python -m jpbot.main
+
+# Write PID to file
+echo "$1" > /tmp/jpbot.pid
