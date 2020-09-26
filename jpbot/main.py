@@ -3,6 +3,7 @@ from discord.ext import commands
 from .commands import Dictionary, EasterEggs, Spotify
 
 from .lyrics.sources.genius import GeniusSource
+from .lyrics.sources.musixmatch import MusixmatchSource
 from lyricsgenius import Genius
 
 token = "Njk5NDUzOTAwMTI1NjM0NjUw.XpUnSA.nw-SkhhMU624YQ-sucF5-HT5Lxc"
@@ -12,6 +13,7 @@ bot = commands.Bot(command_prefix="!")
 
 bot.add_cog(Dictionary(bot))
 bot.add_cog(EasterEggs(bot))
-bot.add_cog(Spotify(bot, GeniusSource(Genius(genius_token))))
+# bot.add_cog(Spotify(bot, GeniusSource(Genius(genius_token))))
+bot.add_cog(Spotify(bot, MusixmatchSource()))
 
 bot.run(token)
